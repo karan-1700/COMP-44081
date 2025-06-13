@@ -11,7 +11,7 @@
 
 ## Summary of Work
 
-### <ins> Accessible Description (For Non-Technical Stakeholders) - _not exceeding 200 words_ </ins>
+### <ins> Accessible Description (For Non-Technical Stakeholders) </ins> - _not exceeding 200 words_
 
 - I improved the original ferry redemption forecasting model by replacing the simplistic seasonal decomposition method with a deep learning approach using Long Short-Term Memory (LSTM) networks, which effectively capture both long-term trends and short-term fluctuations.  
 - The LSTM model integrates calendar-based features such as day of week, month, weekend indicators, and statutory holiday flags to better account for seasonal and event-driven demand patterns.  
@@ -22,7 +22,7 @@
 
 ---
 
-### <ins> Detailed Technical Description - _not exceeding 500 words_ </ins>
+### <ins> Detailed Technical Description </ins> - _not exceeding 500 words_
 
 To address the Toronto ferry redemption forecasting challenge, I applied a rigorous, iterative data science workflow considering both classical and deep learning methods.
 
