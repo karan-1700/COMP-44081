@@ -11,7 +11,7 @@
 
 ## Summary of Work
 
-### Accessible Description (For Non-Technical Stakeholders) - _not exceeding 200 words_
+### <ins> Accessible Description (For Non-Technical Stakeholders) - _not exceeding 200 words_ </ins>
 
 - I improved the original ferry redemption forecasting model by replacing the simplistic seasonal decomposition method with a deep learning approach using Long Short-Term Memory (LSTM) networks, which effectively capture both long-term trends and short-term fluctuations.  
 - The LSTM model integrates calendar-based features such as day of week, month, weekend indicators, and statutory holiday flags to better account for seasonal and event-driven demand patterns.  
@@ -22,11 +22,11 @@
 
 ---
 
-### Detailed Technical Description - _not exceeding 500 words_
+### <ins> Detailed Technical Description - _not exceeding 500 words_ </ins>
 
 To address the Toronto ferry redemption forecasting challenge, I applied a rigorous, iterative data science workflow considering both classical and deep learning methods.
 
-#### Forecasting Model for Redemptions (Task 1)
+#### <ins> Forecasting Model for Redemptions (Task 1) </ins>
 
 First, I assessed the provided baseline model, which used `seasonal_decompose` from `statsmodels`. While simple and interpretable, it failed to capture complex patterns, lacked uncertainty estimation, and performed poorly in periods with irregular demand (e.g., holidays or low winter ridership).
 
@@ -41,11 +41,11 @@ The data was resampled to daily intervals and normalized using `MinMaxScaler`. E
 
 The LSTM model reduced MAPE by approximately **~43%**, and MAE by around **~44%** on average across cross-validation folds, compared to the base model.
 
-#### Forecasting Model for Sales (Task 2)
+#### <ins> Forecasting Model for Sales (Task 2) </ins>
 
 Using the same architecture and workflow, I trained an LSTM model to forecast daily ticket sales. The data showed similar temporal patterns to redemptions, and the model generalized well. Calendar features again played a crucial role in capturing weekly and seasonal cycles. The model provides useful forecasts to support ticketing operations and marketing strategies.
 
-#### Process and Reproducibility (Task 3)
+#### <ins> Process and Reproducibility (Task 3) </ins>
 
 I followed a clean, collaborative development workflow:
 - Class-based architecture for easy extension  
@@ -55,7 +55,7 @@ I followed a clean, collaborative development workflow:
 
 All outputs were validated using robust metrics (**MAE**, **MAPE**, time series split **cross-validation**) and diagnostic plots.
 
-#### Assumptions
+#### <ins> Assumptions </ins>
 
 - Daily ferry usage is driven primarily by **seasonality**, **weekends**, and **statutory holidays**.  
 - No external variables (e.g., weather, local events) were assumed available.  
@@ -63,7 +63,7 @@ All outputs were validated using robust metrics (**MAE**, **MAPE**, time series 
 
 The final system is **accurate**, **extensible**, and **suitable for use** in ferry service planning and resource allocation.
 
-#### Use of AI tools
+#### <ins> Use of AI tools </ins>
 
 - ChatGPT was used to assist with Markdown formatting and table generation.
 
